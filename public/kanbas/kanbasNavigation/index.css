@@ -1,0 +1,64 @@
+.wd-col-20pc{
+    float: left;
+    width: 20%;
+}
+
+.wd-col-60pc{
+    float: left;
+    width: 60%;
+}
+
+.wd-kanbas-navigator{
+    background-color: black;
+    color: white;
+    padding: 0px;
+    width: 80px;
+
+}
+
+.wd-kanbas-navigator li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wd-kanbas-navigator li a{
+    color: white;
+    text-decoration: none;
+
+}
+.wd-kanbas-navigator li.active{
+    background-color: white;
+
+}
+.wd-kanbas-navigator li a.active{
+    color: red;
+}
+
+.wd-dashboard .card{
+    width: 300px;
+}
+
+.wd-profilelink{
+    text-decoration: none;
+    color: red;
+}
+.wd-profilespacing{
+    margin-left: 200px;
+}
+
+.wd-custom-button {
+    background-color: grey;
+    border-color: grey;
+    color: black;
+}
+
+.wd-assignment-link{
+    text-decoration: none;
+    color: black;
+    text-decoration-style: solid;
+}
+.wd-breadcrumb {
+    margin-left: 150px;
+}
+

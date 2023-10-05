@@ -9,13 +9,19 @@
 }
 
 .wd-kanbas-navigator{
+    height: 100%;
     background-color: black;
     color: white;
     padding: 0px;
     width: 80px;
 
 }
-
+.wd-kanbas-images{
+    color: red;
+}
+.wd-kanbas-acc{
+    color: gray;
+}
 .wd-kanbas-navigator li{
     list-style-type: none;
     margin-bottom: 10px;

@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./kanbasNavigation/index.css">
+    <link rel="stylesheet" href="./CourseNavigation/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#" style="color: blue;">Course Name</a></li>
+        <li class="breadcrumb-item"><a href="#" style="color: blue;">Term</a></li>
+        <li class="breadcrumb-item"><a href="#" style="color: blue;">Section</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+<div class="wd-flex-row-container">
+    <div class="d-none d-md-block col-md-2 col-lg-1 bg-color-yellow">
+        <ul class="wd-kanbas-navigator">
+            <li><a href="AccountNavigation.html">Account</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li class="active"><a class="active" href="CourseNavigation.html">Courses</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#inbox">Inbox</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#studio">Studio</a></li>
+            <li><a href="#commons">Commons</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+    </div>
+    <div class="d-none d-md-block col-md-2 col-lg-2 bg-color-yellow">
+        <ul class="wd-course-navigation">
+            <li ><a href="home.html">Home</a></li>
+            <li><a href="#module">Module</a></li>
+            <li><a href="#piazza">Piazza</a></li>
+            <li><a href="#zoom-meetings">Zoom Meetings</a></li>
+            <li><a href="Assignments.html">Assignments</a></li>
+            <li><a href="#quizzes">Quizzes</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#panopto-video">Panopto Video</a></li>
+            <li><a href="#discussions">Discussions</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+            <li><a href="#pages">Pages</a></li>
+            <li><a href="#files">Files</a></li>
+            <li><a href="#rubrics">Rubrics</a></li>
+            <li><a href="#outcomes">Outcomes</a></li>
+            <li><a href="#collaborations">Collaborations</a></li>
+            <li><a href="#syllabus">Syllabus</a></li>
+            <li class="active"><a class="active" href="courseDetails.html">Settings</a></li>
+        </ul>
+    </div>
+        <div class="container mt-5 wd-col-60pc">
+            <nav class="nav">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Course Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SettingsNavigation.html">Navigation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feature Options</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Integration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Navigation</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <form id="edit">
+
+
+                <div class="form-group">
+                    <h5> Image: </h5>
+                        <button type="button" class="btn btn-secondary">Choose Image</button>
+                    </div>
+                <br>
+
+                    <div class="form-group">
+                        <h5>Name</h5>
+                        <input type="text" class="form-control" value="CS4550 12631 Web Development SEC01 Fall2023 [BOS-1-TR]" readonly>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <h5>Course Code:</h5>
+
+                        <input type="text" class="form-control" value="CS4550.12631.202410" readonly>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <h5>Blueprint Course:</h5>
+                        <input type="text" class="form-control" value="No" readonly>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chkbox-course">
+                            <label class="form-check-label" for="chkbox-course">Enable course as a Course Template</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h5>Time Zone:</h5>
+
+                        <select class="form-control" id="select-one">
+                            <option selected value="Eastern Time(US & CANADA)(-05:00/-04:00)">Eastern Time(US & CANADA)(-05:00/-04:00)</option>
+                        </select>
+                    </div>
+                    <br>
+                <div class="form-group">
+                    <h5>SIS ID: </h5>
+                    <input type="text" class="form-control" value="CS4550.12631.202410" readonly>
+                </div>
+                <br>
+                <div class="form-group">
+                <h5>Subaccount</h5>
+                <input type="text" class="form-control" value="CS Undergrad" readonly>
+            </div>
+                <br>
+                <div class="form-group">
+                    <h5>Term:</h5>
+                    <input type="text" class="form-control" value="202410_1 Fall 2023 Semester Full Term" readonly>
+
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Participation:</h5>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Term
+                        </button>
+
+                    </div>
+                    Course participation is limited to term start and end dates.
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Start</h5>
+                    <input type="date" id="start">
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>End</h5>
+                    <input type="date" id="end">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="checkbox" name="check-date" id="chkbox-date">
+                    <label for="chkbox-date">Restrict students from viewing course before the start date</label>
+                    <br>
+                    <input type="checkbox" name="check-date" id="chkbox-date2">
+                    <label for="chkbox-date">Restrict students from viewing course after the end date</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Default due time:</h5>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account default(11:59pm)
+                        </button>
+
+                    </div>
+                    <br>
+                    This influences the user interface for setting due dates, it does not change the time due for any existing assignments.
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Language:</h5>
+                    <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Not set(user-configurable,defaults to English)
+                    </button>
+
+                </div>
+
+
+                    <br>
+                    This will override any user/system language preferences. This is only recommended for foreign language courses.
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>File Storage:</h5>
+                    <input type="text" class="form-control" value="10000 megabytes" readonly>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Large Course:</h5>
+                    <input type="checkbox" name="check" id="chkboxlaunch">
+                    <label for="chkboxlaunch">Launch SpeedGrader Filtered by Student Group</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Grading Scheme:</h5>
+                    <input type="checkbox" name="check" id="chkboxgrade">
+                    <label for="chkboxgrade">Enable course grading scheme</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>License</h5>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Private(Copyrighted)
+                        </button>
+
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>File Copyright:</h5>
+                    <input type="checkbox" name="check" id="chkboxfile">
+                    <label for="chkboxfile">Copyright and license information must be provided for files before they are published.</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Visibility:</h5>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Course
+                        </button>
+
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Mastery Paths:</h5>
+                    <input type="checkbox" name="check" id="chkboxfi">
+                    <label for="chkboxfi"> Enable individual learning paths for students based on assessment</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Description</h5>
+                    <textarea cols="30" rows="5"></textarea>
+                    <a href="#">more options</a>
+                </div>
+                <br><br>
+                <button type="button" class="btn btn-secondary">Update Course Details</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

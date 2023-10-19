@@ -1,56 +1,56 @@
 [
   {
     "_id": "M101",
-    "name": "Introduction to Rocket Propulsion",
-    "description": "Basic principles of rocket propulsion and rocket engines.",
+    "name": "Week 0-INTRO",
+    "description": "Introduction to the course.",
     "course": "RS101"
   },
   {
     "_id": "M102",
-    "name": "Fuel and Combustion",
-    "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+    "name": "Week 1-HTML",
+    "description": "Create user interfaces using HTML.",
     "course": "RS101"
   },
   {
     "_id": "M103",
-    "name": "Nozzle Design",
-    "description": "Principles of rocket nozzle design and performance optimization.",
+    "name": "Week 2-CSS",
+    "description": "Introduction to CSS.",
     "course": "RS101"
   },
   {
     "_id": "M201",
-    "name": "Fundamentals of Aerodynamics",
-    "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+    "name": "Week 0-Intro",
+    "description": "Introduction to the course.",
     "course": "RS102"
   },
   {
     "_id": "M202",
-    "name": "Subsonic and Supersonic Flow",
-    "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+    "name": "Week 1- Algorithms",
+    "description": "Understanding basic algorithms.",
     "course": "RS102"
   },
   {
     "_id": "M203",
-    "name": "Aerodynamic Heating",
-    "description": "Study of aerodynamic heating and thermal protection systems.",
+    "name": "Week 2- Dynamic Programming",
+    "description": "Learning and solving problems in DP.",
     "course": "RS102"
   },
   {
     "_id": "M301",
-    "name": "Spacecraft Structural Design",
-    "description": "Fundamentals of designing spacecraft structures and materials selection.",
+    "name": "Week 0- Intro",
+    "description": "Introduction to the course.",
     "course": "RS103"
   },
   {
     "_id": "M302",
-    "name": "Orbital Mechanics",
-    "description": "Understanding orbital dynamics and mission planning.",
+    "name": "Week 1- D Lang",
+    "description": "Understanding basics of D programming language.",
     "course": "RS103"
   },
   {
     "_id": "M303",
-    "name": "Spacecraft Systems Engineering",
-    "description": "Overview of spacecraft systems and subsystems engineering.",
+    "name": "Week 2- SDLC",
+    "description": "Overview of SDLC setup.",
     "course": "RS103"
   }
 ]

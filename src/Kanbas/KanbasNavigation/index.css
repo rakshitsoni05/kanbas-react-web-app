@@ -1,0 +1,120 @@
+.wd-col-20pc{
+    float: left;
+    width: 20%;
+}
+
+.wd-col-60pc{
+    float: left;
+    width: 60%;
+}
+
+.wd-kanbas-navigator{
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 0px;
+    width: 100px;
+    margin-right: 25px;
+
+}
+.wd-kanbas-images{
+    color: red;
+    font-size: 3em !important;
+    margin-top: 15px;
+}
+.wd-kanbas-acc{
+    color: gray;
+    font-size: 3em !important;
+    margin-top: 15px;
+}
+.wd-kanbas-navigator li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wd-kanbas-navigator li a{
+    color: white;
+    text-decoration: none;
+
+}
+.wd-kanbas-navigator li.active{
+    background-color: white;
+
+}
+.wd-kanbas-navigator li a.active{
+    color: red;
+}
+
+.wd-dashboard .card{
+    width: 300px;
+}
+
+.wd-profilelink{
+    text-decoration: none;
+    color: red;
+}
+.wd-profilespacing{
+    margin-left: 200px;
+}
+
+.wd-custom-button {
+    background-color: grey;
+    border-color: grey;
+    color: black;
+}
+
+.wd-assignment-link{
+    text-decoration: none;
+    color: black;
+    text-decoration-style: solid;
+}
+.wd-breadcrumb {
+    margin-left: 150px;
+}
+.wd-margin-right{
+    margin-right: 30px;
+}
+.wd-margin-bottom{
+    margin-bottom: 10px;
+}
+
+.wd-course-navigation{
+    background-color: white;
+    width: 190px;
+    padding: 0px;
+    margin-left: 20px;
+    height: 100%;
+
+
+}
+
+.wd-course-navigation li{
+    list-style-type: none;
+    margin-bottom: 20px;
+
+    padding-left: 10px;
+
+}
+.wd-course-navigation li.active{
+    border-left: 1px black solid;
+
+}
+
+.wd-course-navigation li a{
+    color: red;
+    text-decoration: none;
+}
+.wd-course-navigation li a.active{
+    color: black;
+}
+
+.active-link {
+    background-color: white !important;
+    color: red !important;
+}
+
+.centered-content {
+    text-align: center;
+}
+

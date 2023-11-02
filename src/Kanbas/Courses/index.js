@@ -10,9 +10,9 @@ import Grades from './Grades';
 import './index.css';
 import db from "../Database";
 
-function Courses() {
+function Courses({courses}) {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     const [currentPage, setCurrentPage] = useState('home');
     const location = useLocation();
 

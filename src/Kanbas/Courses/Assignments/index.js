@@ -1,15 +1,30 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
+import React,{useState, } from "react";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import db from "../../Database";
 import {AiFillCheckCircle} from "react-icons/ai";
 import {SlOptionsVertical} from "react-icons/sl";
 import {AiOutlinePlus} from "react-icons/ai";
 
+import { useSelector, useDispatch } from "react-redux";
+import {
+    addAssignment,
+    deleteAssignment,
+    updateAssignment,
+    setAssignment,
+} from "./assignmentReducer";
+
+
 function Assignments() {
     const { courseId } = useParams();
-    const assignments = db.assignments;
+
+    //const assignments = db.assignments;
+    const assignments = useSelector((state) => state.assignmentReducer.assignments);
+    const assignment = useSelector((state) => state.assignmentReducer.assignment);
+    const dispatch = useDispatch();
+
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
+
     return (
         <div className="container">
             <h3>Assignments for course {courseId}</h3>
@@ -35,8 +50,57 @@ function Assignments() {
                 <hr/>
 
             <div className="list-group custom-list">
+                <li className="list-group-item">
+                    <input
+                        value={assignment.title}
+                        onChange={(e) =>
+                            dispatch(setAssignment({ ...assignment, title: e.target.value }))
+                        }
+                    />
+                    <br/><br/>
+                    <textarea
+                        value={assignment.description}
+                        onChange={(e) =>
+                            dispatch(setAssignment({ ...assignment, description: e.target.value }))
+                        }
+                    />
+                    <br/><br/>
+                    Due Date:
+                    <input
+                        type="date"
+                        value={assignment.dueDate}
+                        onChange={(e) =>
+                            dispatch(setAssignment({ ...assignment, dueDate: e.target.value }))
+                        }
+                    />
+                    <br/><br/>
+                    Available from:
+                    <input
+                        type="date"
+                        value={assignment.availableFromDate}
+                        onChange={(e) =>
+                            dispatch(setAssignment({ ...assignment, availableFromDate: e.target.value }))
+                        }
+                    />
+                    <br/><br/>
+                    Available until:
+                    <input
+                        type="date"
+                        value={assignment.availableUntilDate}
+                        onChange={(e) =>
+                            dispatch(setAssignment({ ...assignment, availableUntilDate: e.target.value }))
+                        }
+                    />
+                    <br/><br/>
+                    <button className="btn btn-danger"
+                        onClick={() => dispatch(addAssignment({ ...assignment, course: courseId }))}>Add</button>
+                    <button className={"btn btn-secondary"}
+                        onClick={() => dispatch(updateAssignment(assignment))}>Update</button>
+                </li>
+                <hr/>
+
                 {courseAssignments.map((assignment) => (
-                    <Link
+                    <li
                         key={assignment._id}
                         to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
                         className="list-group-item custom-list-item d-flex justify-content-between align-items-center"
@@ -44,18 +108,23 @@ function Assignments() {
                         {assignment.title}
 
                         <div>
-                            <button type="button" className="btn btn-success" >
-                                <i> <AiFillCheckCircle /> </i>
+                            <button type="button" className="btn btn-success"
+                                    onClick={() => dispatch(setAssignment(assignment))}>
+                                <i> Edit<AiFillCheckCircle /> </i>
                             </button>
-                            <button type="button" className="btn btn-secondary"
-                                    style={{ backgroundColor: "#f0f0f0", color: "black", border:"none" }}>
-                                <i> <SlOptionsVertical /> </i>
+                            <button type="button" className=" btn btn-danger"
+                                    onClick={() => dispatch(deleteAssignment(assignment._id))}>
+                                Delete
                             </button>
                         </div>
-                    </Link>
+                    </li>
+
+
+
 
                 ))}
                 <div className="d-flex justify-content-end mb-2">
+
 
                 </div>
             </div>

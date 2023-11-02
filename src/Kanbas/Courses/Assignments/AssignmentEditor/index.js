@@ -3,17 +3,24 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
 import {SlOptionsVertical} from "react-icons/sl";
 import {AiFillCheckCircle} from "react-icons/ai";
+import { useSelector, useDispatch } from "react-redux";
+import {
+    addAssignment,
+    deleteAssignment,
+    updateAssignment,
+    setAssignment,
+} from "../assignmentReducer";
 
 function AssignmentEditor() {
     const { assignmentId } = useParams();
     const assignment = db.assignments.find(
         (assignment) => assignment._id === assignmentId);
-
-
+    const assignments = useSelector((state) => state.assignmentReducer.assignments);
+    const dispatch = useDispatch();
     const { courseId } = useParams();
     const navigate = useNavigate();
     const handleSave = () => {
-        console.log("Actually saving assignment TBD in later assignments");
+
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
     return (
@@ -28,7 +35,18 @@ function AssignmentEditor() {
             </div>
             <hr/>
             <h3>Assignment Name</h3>
-            <input value={assignment.title} className="form-control mb-2" />
+            <input
+                value={assignment.title}
+                onChange={(e) =>
+                    dispatch(setAssignment({...assignment, title: e.target.value }))}
+
+
+            />
+            <button onClick={() => dispatch(addAssignment({ ...assignment, course: courseId }))}>Add</button>
+            <button
+                onClick={() => dispatch(updateAssignment(assignment))}>
+                Update
+            </button>
             <hr />
             <div className="d-flex justify-content-end">
                 <Link to={`/Kanbas/Courses/${courseId}/Assignments`} className="btn btn-secondary mx-2">

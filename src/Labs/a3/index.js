@@ -5,6 +5,8 @@ import ConditionalOutput from "./ConditionalOutput";
 import TodoItem from "./todos/TodoItem";
 import TodoList from "./todos/TodoList";
 import {useSelector} from "react-redux";
+import Xtr from "./Xtr";
+import Har from "./Har";
 function Assignment3() {
     const { todos } = useSelector((state) => state.todosReducer);
     return (
@@ -24,6 +26,8 @@ function Assignment3() {
             <JavaScript/>
             <TodoItem/>
             <TodoList/>
+            <Xtr fds="gfd"/>
+            <Har/>
         </div>
     );
 }

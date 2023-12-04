@@ -1,4 +1,4 @@
-import db from "../../Database";
+import db from "../../tempDatabase";
 import { useParams } from "react-router-dom";
 import {FaFileImport} from "react-icons/fa";
 import {FaFileExport} from "react-icons/fa";

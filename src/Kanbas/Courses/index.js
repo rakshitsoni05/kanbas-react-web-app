@@ -8,7 +8,6 @@ import Assignments from './Assignments';
 import AssignmentEditor from './Assignments/AssignmentEditor';
 import Grades from './Grades';
 import './index.css';
-import db from "../Database";
 import axios from "axios";
 
 function Courses() {

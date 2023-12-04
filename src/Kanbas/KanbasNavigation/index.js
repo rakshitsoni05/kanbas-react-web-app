@@ -8,12 +8,14 @@ import {AiOutlineClockCircle} from "react-icons/ai";
 import {FaComputer} from "react-icons/fa6";
 import {FaFileImport} from "react-icons/fa";
 import {BsQuestionCircle} from "react-icons/bs";
+import { FaSignInAlt } from 'react-icons/fa';
 
 import "./index.css";
 
 function KanbasNavigation() {
-    const links = ["Account", "Dashboard", "Courses", "Calendar","Inbox","History","Studio","Commons","Help"];
+    const links = ["Signin","Account", "Dashboard", "Courses", "Calendar","Inbox","History","Studio","Commons","Help"];
     const linkToIconMap = {
+        Signin: <FaSignInAlt className="wd-kanbas-images"/>,
         Account: <BiUserCircle className="wd-kanbas-acc"/>,
         Dashboard: <RiDashboard3Fill className="wd-kanbas-images"/>,
         Courses: <FaBook className="wd-kanbas-images"/>,

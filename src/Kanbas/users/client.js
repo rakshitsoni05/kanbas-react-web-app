@@ -52,9 +52,7 @@ export const findUserByUsername = async (username) => {
 }
 
 export const signup = async (credentials) => {
-    console.log("making the api call");
     const response = await request.post(`${USERS_URL}/signup`, credentials);
-    console.log("completed making the api call");
     return response.data;
 }
 

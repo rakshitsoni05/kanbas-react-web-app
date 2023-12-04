@@ -12,7 +12,7 @@ import axios from "axios";
 
 function Courses() {
     const { courseId } = useParams();
-    const URL = "http://localhost:4000/api/courses";
+    const URL = "https://kanbas-node-server-app-9z8p.onrender.com/api/courses";
     const [course, setCourse] = useState({});
     const findCourseById = async (courseId) => {
         const response = await axios.get(

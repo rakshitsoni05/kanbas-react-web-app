@@ -9,6 +9,7 @@ const request = axios.create({
 
 export const signin = async (credentials) => {
     console.log(`${USERS_URL}/signin`);
+    console.log(process.env);
     const response = await request.post(`${USERS_URL}/signin`, credentials);
     return response.data;
 };

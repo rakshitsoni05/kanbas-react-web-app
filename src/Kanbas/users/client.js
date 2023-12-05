@@ -1,7 +1,7 @@
 import axios from "axios";
 import "dotenv/config";
 
-export const BASE_URL = process.env.REACT_APP_BASE_API_URL;
+export const BASE_URL = "https://kanbas-node-server-app-9z8p.onrender.com";
 export const USERS_URL = `${BASE_URL}/api/users`;
 const request = axios.create({
                                  withCredentials: true,

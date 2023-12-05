@@ -1,6 +1,4 @@
 import axios from "axios";
-import "dotenv/config";
-
 export const BASE_URL = "https://kanbas-node-server-app-9z8p.onrender.com";
 export const USERS_URL = `${BASE_URL}/api/users`;
 const request = axios.create({
@@ -9,7 +7,6 @@ const request = axios.create({
 
 export const signin = async (credentials) => {
     console.log(`${USERS_URL}/signin`);
-    console.log(process.env);
     const response = await request.post(`${USERS_URL}/signin`, credentials);
     return response.data;
 };

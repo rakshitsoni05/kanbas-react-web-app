@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "http://localhost:4000";
+export const BASE_URL = process.env.REACT_APP_BASE_API_URL;
 export const USERS_URL = `${BASE_URL}/api/users`;
 const request = axios.create({
                                  withCredentials: true,
